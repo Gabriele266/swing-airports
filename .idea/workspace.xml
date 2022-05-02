@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa58a6a4-aa2e-454b-9b15-e0dfbcee036f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Airport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Flight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/FlightTrade.java" afterDir="false" />
+    <list default="true" id="aa58a6a4-aa2e-454b-9b15-e0dfbcee036f" name="Changes" comment=":sparkles: Implements basic domain logic">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/serialization/parsers/AirportParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/serialization/threads/AirportParserThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/airports.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -50,6 +48,21 @@
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="airports" />
+      <option name="PROGRAM_PARAMETERS" value="src/main/resources/airports.xml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,8 +71,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651437934470</updated>
-      <workItem from="1651437936559" duration="670000" />
+      <workItem from="1651437936559" duration="3516000" />
     </task>
+    <task id="LOCAL-00001" summary=":sparkles: Implements basic domain logic">
+      <created>1651438721576</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651438721576</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,5 +96,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":sparkles: Implements basic domain logic" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Implements basic domain logic" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/serialization/parsers/AirportParser.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="pointElement.getElementsByTagName(&quot;x&quot;).item(0).getNodeValue()" language="JAVA" />
+        <watch expression="pointElement.getElementsByTagName(&quot;x&quot;)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

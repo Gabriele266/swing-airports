@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<airports>
+    <airport>
+        <name>My simple airport</name>
+        <location x="200" y="20" />
+        <country code="IT">
+            Italy
+        </country>
+    </airport>
+</airports>
