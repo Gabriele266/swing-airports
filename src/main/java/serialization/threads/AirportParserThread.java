@@ -56,9 +56,8 @@ public class AirportParserThread extends Thread {
 
             result = new ArrayList<>();
 
-            for (int x = 0; x < nodes.getLength(); x++) {
+            for (int x = 0; x < nodes.getLength(); x++)
                 result.add(parser.parseOne(nodes.item(x)));
-            }
 
             resultReady = true;
 

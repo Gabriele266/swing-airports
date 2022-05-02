@@ -2,9 +2,14 @@
 <airports>
     <airport>
         <name>My simple airport</name>
-        <location x="200" y="20" />
+        <location x="200" y="20"/>
         <country code="IT">
             Italy
         </country>
+    </airport>
+    <airport>
+        <name>Second airport</name>
+        <location x="30" y="20"/>
+        <country code="EN">England</country>
     </airport>
 </airports>
