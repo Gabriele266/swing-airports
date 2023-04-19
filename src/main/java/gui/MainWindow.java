@@ -30,28 +30,33 @@ public class MainWindow extends JFrame {
     private List<Airport> airports;
 
     public MainWindow() {
-        setTitle("Airport flight manager");
-        setSize(500, 500);
 
-        addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e) {
-                System.out.println("Exiting");
-                save();
+//        setTitle("Airport flight manager");
+//        setSize(500, 500);
+//
+//        addWindowListener(new WindowAdapter() {
+//            @Override
+//            public void windowClosing(WindowEvent e) {
+//                System.out.println("Exiting");
+//                save();
+//
+//                System.exit(0);
+//            }
+//        });
+//
+//        setLayout(new BorderLayout());
+//
+//        try {
+//            initWidgets();
+//            initContent();
+//
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
+    }
 
-                System.exit(0);
-            }
-        });
+    private void testThread() {
 
-        setLayout(new BorderLayout());
-
-        try {
-            initWidgets();
-            initContent();
-
-        } catch (Exception e) {
-            System.out.println(e);
-        }
     }
 
     private void initWidgets() throws Exception {

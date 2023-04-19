@@ -13,7 +13,7 @@ import java.util.List;
 
 public class AirportParser implements Parser<Airport, Node> {
     @Override
-    public Airport parseOne(Node node) {
+    synchronized public Airport parseOne(Node node) {
         Element element = (Element) node;
 
         Airport p = new Airport();
@@ -28,7 +28,7 @@ public class AirportParser implements Parser<Airport, Node> {
         Element countryElement = (Element) element.getElementsByTagName("country").item(0);
         p.setCountry(
                 new Country(
-                        countryElement.getAttribute("code"), countryElement.getTextContent()));
+                        countryElement.getTextContent(), countryElement.getAttribute("code")));
 
         return p;
     }
